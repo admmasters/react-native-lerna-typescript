@@ -1,3 +1,6 @@
+import lodash from 'lodash';
+
 export default function run() {
-  return "Hello Services";
+  const result = lodash.random(0, 100);
+  return `Random number: ${result}`;
 }
