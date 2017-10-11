@@ -1,4 +1,10 @@
 {
+	"scripts": {
+		"clean": "lerna exec -- rm -rf node_modules",
+		"bootstrap": "lerna bootstrap",
+		"bootstrap:clean": "yarn run clean && yarn run bootstrap",
+		"start": "lerna run --parallel app:start"
+	},
 	"devDependencies": {
 		"lerna": "^2.4.0"
 	}
