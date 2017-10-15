@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es2017",
+    "jsx": "react",
+    "noEmit": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "baseUrl": "./packages",
+    "paths": {
+      "*": ["*", "./*/src"]
+    }
+  },
+  "include": [
+    "./packages/services",
+    "./packages/App"
+  ],
+  "exclude": ["node_modules"]
+}
