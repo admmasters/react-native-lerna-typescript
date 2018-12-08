@@ -1,26 +1,30 @@
 {
-	"name": "App",
-	"version": "0.0.1",
-	"scripts": {
-		"app:start": "yarn start",
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"@types/react": "^16.0.10",
-		"@types/react-native": "^0.49.2",
-		"react": "16.0.0",
-		"react-native": "0.49.3"
-	},
-	"devDependencies": {
-		"babel-jest": "21.2.0",
-		"babel-preset-react-native": "4.0.0",
-		"jest": "21.2.1",
-		"react-native-typescript-transformer": "^1.1.4",
-		"react-test-renderer": "16.0.0-beta.5",
-		"typescript": "^2.5.3"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "App",
+  "version": "0.0.1",
+  "scripts": {
+    "app:start": "yarn start",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.10",
+    "@types/react-native": "^0.49.2",
+    "react": "16.0.0",
+    "react-native": "0.50.0",
+    "snyk": "^1.116.2"
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "react-native-typescript-transformer": "^1.1.4",
+    "react-test-renderer": "16.0.0-beta.5",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "snyk": true
 }
